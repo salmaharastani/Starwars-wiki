@@ -1,0 +1,97 @@
+:root{
+    --mailbox-colorone: #0b1c2d;
+    --mailbox-colortwo: #050b15;
+    --mailbox-colorThree: #2aa4ff;
+    --mailbox-colorFour: #cfe9ff;
+    --mailbox-colorFive: #9fd8ff;
+    --mailbox-fontone: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.mailbox{
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(180deg, var(--mailbox-colorone), var(--mailbox-colortwo));
+    border-radius: 1rem;
+    border: 0.5rem solid var(--mailbox-colorThree);
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.6), inset 0 0 20px rgba(0, 120, 255, 0.3);
+    color: #cfe9ff;
+    font-family: var(--mailbox-fontone)
+}
+
+.mailbox-tittle{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: var(--mailbox-colorFive);
+    text-shadow: 0 0 8px var(--mailbox-colorThree);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid var(--mailbox-colorThree);
+    background: linear-gradient(var(--mailbox-colorone), var(--mailbox-colortwo));
+    color: var(--mailbox-colorFour);
+    box-shadow: inset 0 0 10px rgba(0, 120, 255, 0.4);
+}
+
+.text-are{
+    height: 220px;
+    resize: none;
+}
+
+.send-btn {
+  padding: 12px 28px;
+  border-radius: 10px;
+  border: 1px solid var(--mailbox-colorFive);
+  background: linear-gradient(#7f9eb5,#4e6c82);
+  color: #0c1a2c;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 2px 4px rgba(255,255,255,0.4),  0 0 10px rgba(0,150,255,0.5);
+}
+
+.send-btn:hover {
+  background: linear-gradient(#9fc2db,#5f89a6);
+}
+
+
+
+@media (max-width: 800px) {
+
+.mailbox{
+    padding: 10px;
+    border-width: 0.3rem;
+}
+
+.mailbox-tittle{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.input-field{
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+
+
+.send-btn{
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+}
+}
