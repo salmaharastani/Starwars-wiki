@@ -252,6 +252,14 @@ footer{
     position: relative;
     gap: 150px;
 }
+
+.center{
+   padding: 25px 0 25px 0;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 .listItems{
     display:flex;
     justify-content:center; 
@@ -260,6 +268,32 @@ footer{
     font-size: 40px;
 }
 
-.listItems li{
+.listItemsLinks{
+  padding: 20px;
+   display:flex;
+   flex-direction: column;
+    justify-content:center; 
+    align-items:center;
+    gap:20px; 
+    font-size:1rem;
+}
+
+.listItems, .listItemsLinks li{
     list-style:none;
+}
+
+.fa-tiktok{
+    color: white;
+}
+
+.fa-instagram{
+    color: #833ab4;
+}
+
+.fa-facebook{
+    color: blue;
+}
+
+.fa-reddit{
+    color: orangered;
 }
