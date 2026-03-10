@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const numStars = 100
+  const numStars = 150
   const container = document.body.querySelector('#stars')
   for (let i = 0; i < numStars; i++) {
     let star = document.createElement('div')
