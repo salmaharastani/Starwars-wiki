@@ -33,15 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
       isScrolling = false
     }, 150)
 
-    console.log(scrollAmount)
-    console.log(maxsabervh)
     if (scrollAmount > 5) {
       lightsaber.style.boxShadow = '-1px -6px 41px 14px #00FF28'
     } else {
       lightsaber.style.boxShadow = ''
     }
     const scrollVh = (scrollAmount / window.innerHeight) * 100
-    console.log(baseHeight, 'base')
+
     lightsaber.style.height = `${baseHeight + scrollVh}vh`
   }
 
