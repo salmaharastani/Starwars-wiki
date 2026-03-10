@@ -3,9 +3,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const baseHeight = 0
   const scrollStartSound = new Audio('audio/lightsaber.mp3')
   scrollStartSound.preload = 'auto'
+  const entersound = new Audio('audio/lightsaber1.mp3')
+  entersound.preload = 'auto'
 
   let isScrolling = false
   let scrollStopTimer
+  lightsaber.addEventListener('mouseenter', () => {
+    entersound.play().catch(() => {})
+  })
 
   function updateLightsaberHeight () {
     const maxsabervh = window.innerHeight * 0.8
