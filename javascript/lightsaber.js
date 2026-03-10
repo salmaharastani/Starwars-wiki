@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!lightsaber) {
       return
     }
+    const scrollAmount = window.scrollY
+    if (scrollAmount > maxsabervh) {
+      return
+    }
 
     if (!isScrolling) {
       scrollStartSound.currentTime = 0
@@ -29,10 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
       isScrolling = false
     }, 150)
 
-    const scrollAmount = window.scrollY
-    if (scrollAmount > maxsabervh) {
-      return
-    }
     console.log(scrollAmount)
     console.log(maxsabervh)
     if (scrollAmount > 5) {
