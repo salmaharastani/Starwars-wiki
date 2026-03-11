@@ -91,7 +91,7 @@ header {
 }
 
 .imgStarfighter.active{
-     transform: rotate(90deg);
+     transform: rotate(180deg);
 }
 .nav-links.active{
    
