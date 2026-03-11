@@ -1,3 +1,5 @@
+const jediCard = document.querySelector(".shell-card")
+
 //fetch star wars data from both akabab and star wars data bank api
 async function fetchStarWarsData() {
     const akababUrl = "https://raw.githubusercontent.com/akabab/starwars-api/master/api/all.json";
@@ -21,6 +23,7 @@ async function fetchStarWarsData() {
         const combineData = akababData.map(char => {
             // find matching Names from both apis 
             const matchNames = dataBankCharacters.find(dbChar => dbChar.name === char.name)
+          
             const newData = {
                 name: char.name,
                 image: char.image,
@@ -39,6 +42,30 @@ async function fetchStarWarsData() {
         const jedi = combineData.filter(char => char.affiliations?.includes("Jedi Order"));
         console.log("Hittade jedi:", jedi)
 
+       const  renderJedi = async ()=>{
+        console.log(jediCard)
+            jedi.forEach(j => {
+                const jediDiv = document.createElement('div')
+                //const charImgEl = document.createElement('img')
+                const charNameEl = document.createElement('h1')
+                const charDesEl = document.createElement('p')
+               
+                const name = j.name
+                const description = j.description
+                const affiliations = j.affiliations
+                
+             
+              // charImgEl.src = j.image
+                charNameEl.innerText = `${name}`
+                charDesEl.innerText = `Description: ${description}`
+             
+
+                 jediDiv.append(charNameEl,charDesEl,charAffiEl)
+                 jediCard.append(jediDiv)
+                
+            });
+        }
+renderJedi()
 
     } catch (err) {
         console.error('does not work')
@@ -48,3 +75,4 @@ async function fetchStarWarsData() {
 }
 
 fetchStarWarsData()
+
