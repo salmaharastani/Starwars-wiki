@@ -27,6 +27,10 @@ body{
     color: rgb(247, 17, 17);
 }
 
+header {
+    margin-top: 1rem;
+    z-index: 20;
+}
 
 /* NAVBAR */
 
@@ -36,16 +40,14 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
-}
-
-header {
-    margin-top: 1rem;
+     z-index: 1000;
 }
 
 .nav-links{
     background-color: transparent;
     display:flex;
     gap:30px;
+   
 }
 
 .menu-toggle{
@@ -67,8 +69,10 @@ header {
 }
 
 .navbar{
-    justify-content:space-between;
+    justify-content:flex-end;
     padding:10px;
+   
+    
 }
 
 .nav-links{
@@ -76,19 +80,31 @@ header {
     flex-direction:column;
     position:absolute;
     top:60px;
-    left:0;
     width:100%;
     text-align:center;
     gap:5px;
 }
 
 .imgStarfighter{
-    transform: rotate(90deg);
+ 
+    transform: rotate(-90deg);
 }
 
+.imgStarfighter.active{
+     transform: rotate(180deg);
+}
 .nav-links.active{
+   
+    padding: 10px 0 10px 0;
     display:flex;
+<<<<<<< HEAD
     z-index: 10;
+=======
+    width: 100px;
+    gap: 10px;
+   
+    
+>>>>>>> 4302d808c19665325d338c6a2c0de49083c09e53
 }
 
 .menu-toggle{
