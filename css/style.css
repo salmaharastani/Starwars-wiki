@@ -97,14 +97,10 @@ header {
    
     padding: 10px 0 10px 0;
     display:flex;
-<<<<<<< HEAD
-    z-index: 10;
-=======
     width: 100px;
     gap: 10px;
    
     
->>>>>>> 4302d808c19665325d338c6a2c0de49083c09e53
 }
 
 .menu-toggle{
