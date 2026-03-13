@@ -1,0 +1,67 @@
+
+
+
+/* About page - Intro video styling */
+
+#intro.hideIntro {
+    display: none;
+}
+
+
+.page.hideContent {
+    display: none;
+}
+
+#intro.showIntro {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Permission message styling */
+.permission-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px 50px;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    color: #FFD700;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+/* Fade in animation for content after video */
+@keyframes fadeInContent {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.page.showContent {
+    animation: fadeInContent 1s ease-in;
+}

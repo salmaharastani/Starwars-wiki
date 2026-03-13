@@ -37,24 +37,22 @@
       <section class="computer">
         <div class="mailbox">
           <div class="mailbox-tittle"><h1>MAILBOX</h1></div>
-          <input class="input-field" type="text" placeholder="To" required />
-          <input
-            class="input-field"
-            type="text"
-            placeholder="Subject"
-            required
-          />
-          <textarea class="input-field text-area" required></textarea>
+          <input class="input-field" type="email" value="Galactic Archive" readonly/>
+          <input class="input-field" type="text" placeholder="Subject" required/>
+          <textarea class="input-field text-area" placeholder="Tell us about the knowledge you found" required></textarea>
           <p class="fee">FEE ₡100</p>
           <button class="send-btn">Send</button>
         </div>
       </section>
     </main>
+     <div id="popup">
+      <img src="../img/jacuzzi.gif" alt="GIF">
+      </div>
          <footer class="footerWrapper">
         <ul class="internalLinkWrapper">
-          <li>  <a href="src/about.html" class="about">About us</a></li>
-          <li>  <a href="src/forum.html" class="forum">Forum</a></li>
-          <li>  <a href="src/apilinks.html" class="character">Api list</a></li>
+          <li>  <a href="../src/about.html" class="about">About us</a></li>
+          <li>  <a href="../src/forum.html" class="forum">Forum</a></li>
+          <li>  <a href="../src/apilinks.html" class="character">Api list</a></li>
         </ul>
         <ul class="socialLinkWrapper">
           <li><i class="fa-brands fa-tiktok"></i></li>
@@ -64,6 +62,8 @@
         </ul>
         <p class="footerMeta">Galactic Archive // 2026</p>
       </footer>
+  
   </body>
     <script type="module" src="../javascript/navbar.js"></script>
+      <script type="module" src="../javascript/popup.js"></script>
 </html>
