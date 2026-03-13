@@ -101,6 +101,8 @@ footer,
 
   .menu-toggle{
     display: block;
+    background: none;
+	
   }
 
   nav{
