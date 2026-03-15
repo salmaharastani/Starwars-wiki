@@ -3,7 +3,7 @@ const sithCard = document.querySelector("#sith")
 
 
 
-const dataBankUrl = "https://starwars-databank-server.vercel.app/api/v1/characters?page=2&limit=total"
+const dataBankUrl = "https://starwars-databank-server.onrender.com/api/v1/characters?page=2&limit=total"
 
 fetch(dataBankUrl)
     .then(res => { return res.json(); })
