@@ -19,14 +19,7 @@ body{
 
 }
 
-.lightmode{
-    background-color: transparent;
-    color: rgb(47, 249, 36);
-}
-.darkmode{
-    background-color: transparent;
-    color: rgb(247, 17, 17);
-}
+
 
 header {
     margin-top: 1rem;
@@ -427,4 +420,126 @@ header {
     .leftcontent, .rightcontent {
         border-width: 2px;
     }
+}
+/* =========================
+   LIGHT MODE - STYLE.CSS
+========================= */
+
+body.lightmode {
+  color: #111827;
+}
+
+/* HERO */
+body.lightmode .hero-section {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.92) 0%,
+    rgba(244, 247, 252, 0.96) 50%,
+    rgba(230, 239, 255, 0.92) 100%
+  );
+  border: 3px solid #2e67f8;
+  box-shadow:
+    0 0 32px rgba(46, 103, 248, 0.22),
+    inset 0 0 18px rgba(46, 103, 248, 0.08);
+}
+
+body.lightmode .hero-section::before {
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.12) 0%, transparent 70%);
+}
+
+body.lightmode .hero-section::after {
+  background: radial-gradient(circle, rgba(46, 103, 248, 0.12) 0%, transparent 70%);
+}
+
+body.lightmode .hero-content {
+  color: #1f2937;
+}
+
+body.lightmode .hero-title {
+  color: #d4a200;
+  text-shadow:
+    0 0 12px rgba(255, 215, 0, 0.35),
+    0 0 24px rgba(255, 215, 0, 0.18),
+    1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+body.lightmode .hero-subtitle {
+  color: #2e67f8;
+  text-shadow: 0 0 8px rgba(46, 103, 248, 0.22);
+}
+
+body.lightmode .hero-description {
+  color: #334155;
+}
+
+/* CONTENT WRAPPER */
+body.lightmode #contentwrapper {
+  color: #1f2937;
+}
+
+/* CARDS GENERAL */
+body.lightmode .leftcontent,
+body.lightmode .rightcontent {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.95),
+    rgba(242, 246, 252, 0.95)
+  );
+  color: #1f2937;
+}
+
+/* JEDI CARD */
+body.lightmode .leftcontent {
+  border: 3px solid #2e67f8;
+  box-shadow:
+    0 0 20px rgba(46, 103, 248, 0.18),
+    inset 0 0 12px rgba(46, 103, 248, 0.05);
+}
+
+body.lightmode .leftcontent:hover {
+  border-color: #3b82f6;
+  box-shadow:
+    0 0 28px rgba(46, 103, 248, 0.28),
+    inset 0 0 14px rgba(46, 103, 248, 0.08);
+}
+
+body.lightmode .leftcontent h1 {
+  color: #2e67f8;
+  text-shadow: 0 0 10px rgba(46, 103, 248, 0.2);
+}
+
+/* SITH CARD */
+body.lightmode .rightcontent {
+  border: 3px solid #e05252;
+  box-shadow:
+    0 0 20px rgba(224, 82, 82, 0.15),
+    inset 0 0 12px rgba(224, 82, 82, 0.05);
+}
+
+body.lightmode .rightcontent:hover {
+  border-color: #ef4444;
+  box-shadow:
+    0 0 28px rgba(239, 68, 68, 0.24),
+    inset 0 0 14px rgba(239, 68, 68, 0.08);
+}
+
+body.lightmode .rightcontent h1 {
+  color: #e05252;
+  text-shadow: 0 0 10px rgba(224, 82, 82, 0.18);
+}
+
+/* TEXT IN CARDS */
+body.lightmode .leftcontent p,
+body.lightmode .rightcontent p {
+  color: #334155;
+}
+
+/* LINKS IN CARDS */
+body.lightmode #contentwrapper a {
+  color: inherit;
+}
+
+/* POPUP */
+body.lightmode #popup {
+  color: #111827;
 }

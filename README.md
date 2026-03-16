@@ -1,4 +1,10 @@
 # 🌌 Starwars Wiki
+![HTML](https://img.shields.io/badge/HTML-5-orange)
+![CSS](https://img.shields.io/badge/CSS-3-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![API](https://img.shields.io/badge/API-StarWars-green)
+![GitHub](https://img.shields.io/badge/GitHub-Repository-black)  
+
 
 En responsiv webbplats som visar information om Star Wars-karaktärer genom att hämta data från ett externt API. Projektet är gjort som en gruppuppgift med fokus på samarbete, versionshantering och modern webbutveckling.
 
